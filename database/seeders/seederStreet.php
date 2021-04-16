@@ -172,14 +172,20 @@ class seederStreet extends Seeder
 
 
         //Negage
-        DB::table('street')->insert(["bairro"=>"Negage","municipe_id"=>153]);
+        DB::table('street')->insert(["bairro"=>"Dimuca","municipe_id"=>153]);
         DB::table('street')->insert(["bairro"=>"Quisseque","municipe_id"=>153]);
         DB::table('street')->insert(["bairro"=>"Negage","municipe_id"=>153]);
 
         //Puri
         DB::table('street')->insert(["bairro"=>"Puri","municipe_id"=>154]);
 
-
+        //Maquela do Zombo
+        DB::table('street')->insert(["bairro"=>"Maquela do Zombo","municipe_id"=>160]);
+        DB::table('street')->insert(["bairro"=>"Quibocolo","municipe_id"=>160]);
+        DB::table('street')->insert(["bairro"=>"Béu","municipe_id"=>160]);
+        DB::table('street')->insert(["bairro"=>"Sacandica","municipe_id"=>160]);
+        DB::table('street')->insert(["bairro"=>"Cuilo Futa","municipe_id"=>160]);
+     
 
 
 
