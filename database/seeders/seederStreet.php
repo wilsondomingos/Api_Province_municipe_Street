@@ -186,11 +186,65 @@ class seederStreet extends Seeder
         DB::table('street')->insert(["bairro"=>"Sacandica","municipe_id"=>160]);
         DB::table('street')->insert(["bairro"=>"Cuilo Futa","municipe_id"=>160]);
      
+        //Damba
+        DB::table('street')->insert(["bairro"=>"Damba","municipe_id"=>150]);
+        DB::table('street')->insert(["bairro"=>"Nsosso","municipe_id"=>150]);
+        DB::table('street')->insert(["bairro"=>"Camatambo","municipe_id"=>150]);
+        DB::table('street')->insert(["bairro"=>"Lêmboa","municipe_id"=>150]);
+        DB::table('street')->insert(["bairro"=>"Petecusso","municipe_id"=>150]);
+
+
+         //Pombo
+         DB::table('street')->insert(["bairro"=>"Sanza Pombo","municipe_id"=>157]);
+         DB::table('street')->insert(["bairro"=>"Cuilo Pombo","municipe_id"=>157]);
+         DB::table('street')->insert(["bairro"=>"Uamba","municipe_id"=>157]);
+         DB::table('street')->insert(["bairro"=>"Alfândega","municipe_id"=>157]);
+
+         //Bembe
+         DB::table('street')->insert(["bairro"=>"Bembe","municipe_id"=>147]);
+         DB::table('street')->insert(["bairro"=>"Lucunga","municipe_id"=>147]);
+         DB::table('street')->insert(["bairro"=>"Mabaia","municipe_id"=>147]);
+
+
+         //Milunga
+         DB::table('street')->insert(["bairro"=>"Milunga","municipe_id"=>151]);
+         DB::table('street')->insert(["bairro"=>"Macocola","municipe_id"=>151]);
+         DB::table('street')->insert(["bairro"=>"Macolo","municipe_id"=>151]);
+         DB::table('street')->insert(["bairro"=>"Massau","municipe_id"=>151]);
+
+
+          //Songo
+          DB::table('street')->insert(["bairro"=>"Songo","municipe_id"=>158]);
+          DB::table('street')->insert(["bairro"=>"Quivuenga","municipe_id"=>158]);
+
+
+           //Quimbele
+         DB::table('street')->insert(["bairro"=>"Quimbele","municipe_id"=>155]);
+         DB::table('street')->insert(["bairro"=>"Cuango","municipe_id"=>155]);
+         DB::table('street')->insert(["bairro"=>"Icoca","municipe_id"=>155]);
+         DB::table('street')->insert(["bairro"=>"Alto Zaza","municipe_id"=>155]);
 
 
 
+         //Alto Cauale
+         DB::table('street')->insert(["bairro"=>"Cangola","municipe_id"=>145]);
+         DB::table('street')->insert(["bairro"=>"Bengo","municipe_id"=>145]);
+         DB::table('street')->insert(["bairro"=>"Caiongo","municipe_id"=>145]);
 
 
+         //Uíge
+         DB::table('street')->insert(["bairro"=>"Cidade do Uíge","municipe_id"=>159]);
+
+
+
+          //Mucaba
+          DB::table('street')->insert(["bairro"=>"Mucaba","municipe_id"=>152]);
+          DB::table('street')->insert(["bairro"=>"Uando Mucaba","municipe_id"=>152]);
+
+          //Buengas
+         DB::table('street')->insert(["bairro"=>"Buenga Sul","municipe_id"=>148]);
+         DB::table('street')->insert(["bairro"=>"Nova Esperança","municipe_id"=>148]);
+         DB::table('street')->insert(["bairro"=>"Cuilo Camboso","municipe_id"=>148]);
 
 
 
