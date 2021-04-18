@@ -1,9 +1,165 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot>
 
-   
+<x-app-layout>
+  
+
+
+
+    <p>
+ 
+
+  <div class="col-10 mb-3 container mt-4">
+
+  <a class="btn  btn-primary btn-sm btn-block" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+  Provincias
+  </a>
+ </div>
+ 
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+  <h2 class="text-center mt-2">Provincias</h2>
+  <div class="container jumbotron jumbotron-fluid mt-5 bg-primary">
+       
+       <div class="container">
+         
+           <table class="table">
+               <thead>
+                 <tr>
+                   <th scope="col">id</th>
+                   <th scope="col">Provincias</th>
+                   <th scope="col">Acção</th>
+                 </tr>
+               </thead>
+             
+              
+               
+               <tbody>
+                @foreach($Province as $pro)
+                 <tr>
+                   <td scope="row" class="text-white">{{$pro->id}}</td>
+                   <td class="text-white" >{{$pro->provincia}}</td>
+                    <td>
+                    <a href="#" class="btn btn-success">Editar</a>
+                    </td>
+                    <td>
+                    <a href="#" class="btn btn-danger">Apagar</a>
+                    </td>
+                    <td>
+                    <a href="#" class="btn btn-info">Info</a>
+                    </td>
+                 </tr>
+                 
+                 @endforeach
+               </tbody>
+          
+          
+             </table>
+       </div>
+     </div>
+  </div>
+</div>
+
+
+
+
+<div class="col-10 mb-3 container">
+
+<a class="btn  btn-primary btn-sm btn-block" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+Municipios
+</a>
+</div>
+
+</p>
+<div class="collapse" id="collapseExample1">
+<div class="card card-body">
+
+      <h2 class="text-center mt-2">Municipios</h2>
+      <div class="container jumbotron jumbotron-fluid mt-5">
+         
+          <div class="container">
+            
+              <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">First</th>
+                      <th scope="col">Last</th>
+                      <th scope="col">Handle</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </tbody>
+                </table>
+          </div>
+        </div>
+        </div>
+        </div>
+        <div class="col-10 mb-3 container">
+
+<a class="btn  btn-primary btn-sm btn-block" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+Distritos / Comunas
+</a>
+</div>
+
+</p>
+<div class="collapse" id="collapseExample2">
+<div class="card card-body">
+        <h2 class="text-center mt-2">Distritos / Comunas</h2>
+        <div class="container jumbotron jumbotron-fluid mt-5">
+           
+            <div class="container">
+              
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+          </div>
+          </div>
+          </div>
 </x-app-layout>
+
