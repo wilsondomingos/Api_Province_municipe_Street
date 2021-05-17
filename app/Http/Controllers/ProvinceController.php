@@ -27,10 +27,11 @@ class ProvinceController extends Controller
        ->join('province', 'province.id', '=','municipe.provincia_id')
        ->select('municipe.*', 'province.*')
        ->get();
-       //dd( $municipe );
+      // dd( $municipe );
        $distrito = DB::table('street')
        ->join('municipe', 'municipe.id', '=','street.municipe_id')
-       ->select('street.*', 'municipe.*')
+       ->join('province', 'province.id', '=','municipe.provincia_id')
+       ->select('street.*', 'municipe.*','province.*')
        ->get();
  //dd( $distrito );
         return view('Home',compact('Province','municipe','distrito'));

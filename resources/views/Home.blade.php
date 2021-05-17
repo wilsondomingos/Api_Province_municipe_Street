@@ -18,7 +18,7 @@
 <div class="collapse" id="collapseExample">
   <div class="card card-body">
   <h2 class="text-center mt-2">Provincias</h2>
-  <div class="container jumbotron jumbotron-fluid mt-5 bg-primary">
+  <div class="container jumbotron jumbotron-fluid mt-5 bg-secondary">
        
        <div class="container">
          
@@ -77,7 +77,7 @@ Municipios
 <div class="card card-body">
 
       <h2 class="text-center mt-2">Municipios</h2>
-      <div class="container jumbotron jumbotron-fluid mt-5 bg-primary">
+      <div class="container jumbotron jumbotron-fluid mt-5 bg-secondary">
          
           <div class="container">
             
@@ -97,7 +97,7 @@ Municipios
 
                  <td scope="row" class="text-white">{{$mun->id}}</td>
                 
-                   <td class="text-white" >{{$pro->provincia}}</td>
+                   <td class="text-white" >{{$mun->provincia}}</td>
               
                    <td class="text-white" >{{$mun->municipio}}</td>
                    
@@ -131,7 +131,7 @@ Distritos / Comunas
 <div class="collapse" id="collapseExample2">
 <div class="card card-body">
         <h2 class="text-center mt-2">Distritos / Comunas</h2>
-        <div class="container jumbotron jumbotron-fluid mt-5 bg-primary">
+        <div class="container jumbotron jumbotron-fluid mt-5 bg-secondary">
            
             <div class="container">
               
@@ -139,6 +139,7 @@ Distritos / Comunas
                     <thead>
                       <tr>
                         <th scope="col">id</th>
+                        <th scope="col">Provincia</th>
                         <th scope="col">Municipios</th>
                         <th scope="col">Distrito/Comuna</th>
                         <th scope="col">Acção</th>
@@ -150,7 +151,7 @@ Distritos / Comunas
                   @foreach($distrito as $dist)
                       
                  <td scope="row" class="text-white">{{$dist->id}}</td>
-           
+                 <td class="text-white" >{{$dist->provincia}}</td>
                    <td class="text-white" >{{$dist->municipio}}</td>
                  
              

@@ -248,16 +248,48 @@ class seederStreet extends Seeder
 
 
 
+         //»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» So Bengo »»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»
+        //Dande
+
+        DB::table('street')->insert(["bairro"=>"Barra do Dande","municipe_id"=>4]);
+        DB::table('street')->insert(["bairro"=>"Caxito","municipe_id"=>4]);
+        DB::table('street')->insert(["bairro"=>"Mabubas","municipe_id"=>4]);
+        DB::table('street')->insert(["bairro"=>"Quicabo","municipe_id"=>4]);
+        DB::table('street')->insert(["bairro"=>"Úcua","municipe_id"=>4]);
 
 
+         //Dembos
+         DB::table('street')->insert(["bairro"=>"Quibaxe","municipe_id"=>5]);
+         DB::table('street')->insert(["bairro"=>"Piri","municipe_id"=>5]);
+         DB::table('street')->insert(["bairro"=>"Paredes","municipe_id"=>5]);
+         DB::table('street')->insert(["bairro"=>"Coxe","municipe_id"=>5]);
+      
+
+          //Nambuangongo
+          DB::table('street')->insert(["bairro"=>"Canacassala","municipe_id"=>6]);
+          DB::table('street')->insert(["bairro"=>"Quicunzo","municipe_id"=>6]);
+          DB::table('street')->insert(["bairro"=>"Muxaluando","municipe_id"=>6]);
+          DB::table('street')->insert(["bairro"=>"Quixico","municipe_id"=>6]);
+          DB::table('street')->insert(["bairro"=>"Gombe","municipe_id"=>6]);
+          DB::table('street')->insert(["bairro"=>"Cage","municipe_id"=>6]);
+          DB::table('street')->insert(["bairro"=>"Zala","municipe_id"=>6]);
+
+         //Bula Atumba
+         DB::table('street')->insert(["bairro"=>"Bula Atumba","municipe_id"=>3]);
+         DB::table('street')->insert(["bairro"=>"Quiage","municipe_id"=>3]);
 
 
+         //Ambriz
+         DB::table('street')->insert(["bairro"=>"Ambriz","municipe_id"=>2]);
+         DB::table('street')->insert(["bairro"=>"Bela-Vista","municipe_id"=>2]);
+         DB::table('street')->insert(["bairro"=>"Tabi","municipe_id"=>2]);
 
 
+         //Pango Aluquém
+         DB::table('street')->insert(["bairro"=>"Pango Aluquém","municipe_id"=>7]);
+         DB::table('street')->insert(["bairro"=>"Cazuangongo","municipe_id"=>7]);
 
-
-
-
+        
 
 
 
