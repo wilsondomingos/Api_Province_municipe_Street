@@ -14,14 +14,14 @@ use Illuminate\Auth\Middleware\Authenticate;
 */
 
 
-
+Route::get('/', function () {
+    return view('Home');
+});
 
 Route::middleware(('auth'))->group(function () {
    
-    Route::get('/', function () {
-        return view('welcome');
-    });
-    Route::get('/',[\App\Http\Controllers\ProvinceController::class,'index']);
+    Route::get('/',[\App\Http\Controllers\MunicipeController::class,'municipio']);
+    Route::get('/',[\App\Http\Controllers\ProvinceController::class,'province']);
     
 });
 

@@ -34,6 +34,7 @@
               
                
                <tbody>
+              @if(isset($Province))
                 @foreach($Province as $pro)
                  <tr>
                    <td scope="row" class="text-white">{{$pro->id}}</td>
@@ -50,6 +51,8 @@
                  </tr>
                  
                  @endforeach
+                 @endif
+              
                </tbody>
           
           
@@ -74,38 +77,43 @@ Municipios
 <div class="card card-body">
 
       <h2 class="text-center mt-2">Municipios</h2>
-      <div class="container jumbotron jumbotron-fluid mt-5">
+      <div class="container jumbotron jumbotron-fluid mt-5 bg-primary">
          
           <div class="container">
             
               <table class="table">
                   <thead>
                     <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">First</th>
-                      <th scope="col">Last</th>
-                      <th scope="col">Handle</th>
+                      <th scope="col">id</th>
+                      <th scope="col">Provincias</th>
+                      <th scope="col">Municipios</th>
+                      <th scope="col">Acção</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Mark</td>
-                      <td>Otto</td>
-                      <td>@mdo</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>@fat</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Larry</td>
-                      <td>the Bird</td>
-                      <td>@twitter</td>
-                    </tr>
+                  @if(isset($municipe))
+                  @foreach($municipe as $mun)
+                 <tr>
+
+                 <td scope="row" class="text-white">{{$mun->id}}</td>
+                
+                   <td class="text-white" >{{$pro->provincia}}</td>
+              
+                   <td class="text-white" >{{$mun->municipio}}</td>
+                   
+                    <td>
+                    <a href="#" class="btn btn-success">Editar</a>
+                    </td>
+                    <td>
+                    <a href="#" class="btn btn-danger">Apagar</a>
+                    </td>
+                    <td>
+                    <a href="#" class="btn btn-info">Info</a>
+                    </td>
+                 </tr>
+                 
+                 @endforeach
+                 @endif
                   </tbody>
                 </table>
           </div>
@@ -123,38 +131,43 @@ Distritos / Comunas
 <div class="collapse" id="collapseExample2">
 <div class="card card-body">
         <h2 class="text-center mt-2">Distritos / Comunas</h2>
-        <div class="container jumbotron jumbotron-fluid mt-5">
+        <div class="container jumbotron jumbotron-fluid mt-5 bg-primary">
            
             <div class="container">
               
                 <table class="table">
                     <thead>
                       <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
+                        <th scope="col">id</th>
+                        <th scope="col">Municipios</th>
+                        <th scope="col">Distrito/Comuna</th>
+                        <th scope="col">Acção</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
+                      @if(isset($distrito))
+                  @foreach($distrito as $dist)
+                      
+                 <td scope="row" class="text-white">{{$dist->id}}</td>
+           
+                   <td class="text-white" >{{$dist->municipio}}</td>
+                 
+             
+                   <td class="text-white" >{{$dist->bairro}}</td>
+                   
+                    <td>
+                    <a href="#" class="btn btn-success">Editar</a>
+                    </td>
+                    <td>
+                    <a href="#" class="btn btn-danger">Apagar</a>
+                    </td>
+                    <td>
+                    <a href="#" class="btn btn-info">Info</a>
+                    </td>
+                 </tr>
+                      @endforeach
+                 @endif
                     </tbody>
                   </table>
             </div>
