@@ -1,5 +1,5 @@
 
-# 🇦🇴 API de Localizações de Angola
+# API de Localizações de Angola
 ### Províncias, Municípios e Distritos/Ruas
 
 ![Laravel](https://img.shields.io/badge/Laravel-10.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
